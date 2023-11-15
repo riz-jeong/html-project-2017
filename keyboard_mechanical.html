@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8>
+
+<title>키보드와 마우스</title>
+
+<style type="text/css">
+    *{ margin: 0; padding:0;
+        font-family:'맑은고딕','Malgun Gothic',Gothic, sans-serif; }
+    a{ color: black;text-decoration: none; }
+    li{ list-style: none; } 
+</style>
+
+<link type="text/css" rel="stylesheet" href="css.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('.outer-menu-item').hover(function ()
+            {
+                $(this).find('.inner-menu').show();
+            }, function () {
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+    window.onload = function(){
+        var clock = document.getElementById('clock');
+        
+        setInterval(function(){
+            var now = new Date();
+            clock.innerHTML = now.toString();
+        },1000);
+    };
+    </script>
+
+</head>
+
+<body>
+<div id="page-wrapper">
+    <header id ="main-header">
+        <hgroup>
+            <h1 class="master-title"><a href="INDEX.html">Keyboard & mouse</a></h1>
+            <h2 class="master-descriprion">키보드와 마우스</h2>
+        </hgroup>
+     </header>
+     <nav id="main-navigation">
+        <div class="pull-left">
+            <ul class="outer-menu">
+            <li class="outer-menu-item">
+                <span class="menu-title">키보드-방식</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_membrane.html"> 멤브레인</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical.html"> 기계식</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive.html"> 정전용량무접점</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">기계식키보드</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_linear.html">리니어</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_non-click.html">넌클릭</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_click.html">클릭</a></li>
+                </ul>
+            </li>
+             <li class="outer-menu-item">
+                <span class="menu-title">정전용량무접점</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_topre.html">토프레</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_pfu.html">PFU</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_leopold.html">레오폴드</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">마우스 그립</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_palm.html">팜 그립</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_claw.html">클로 그립</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_finger.html">핑거 그립</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">마우스 용어</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="mouse_dpi.html">DPI</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_fps.html">FPS</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_pollingrate.html">폴링레이트</a></li>
+                </ul>
+            </li>
+        </div>
+    </nav>
+
+<div id="content">
+    <section id="main-section">
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">기계식 키보드</h1>
+            </div>
+            <hr>
+            <br>
+            <div class="article-body">
+                <img src="keyboard_mechanical\mechanical.jpg" width="690" />
+                <br/><br/><br/>
+                <p>기계식 키보드는 각 입력키에 스위치가 탑재돼있으며, 스위치를 동작할 때마다 슬라이더가 접점 부위에 맞닿아 동작하는 키보드이다. 각 스위치에는 슬라이더 및 스프링이 탑재되어 전체적으로 각 제조사 마다 스펙에 맞는 균등한 키압력을 제공하며, 다른 방식의 멤브레인 / 시저 / 플린저 키보드에 비해 단가가 비싸다.<br><br>기계식 키보드는 제조사별로 구분되고 스위치 색상별로 특색을 가진다. 대중적으로 사용하는 제조사는 Cherry 社와 KAIHUA ELECTRONICS 社로 나누어진다. 먼저 Cherry 社에서 사용하는 스위치부터 설명하도록 하겠다. 현재 기계식 키보드를 사용 중인 사용자라면 대부분이 Cherry 社에서 제조되고 있는 Cherry MX Switch를 사용할 것이다. Cherry MX Switch 스위치는 크게 리니어 / 넌클릭 / 클릭 으로 나눌 수 있다.</p>
+            
+            <div style="cursor:pointer;" align="right" onclick="window.scrollTo(0,0);">TOP</div>
+            </div>            
+       </article>
+   </section>
+
+<aside id="main-aside">
+    <div class="aside-list">
+        <h3>키보드</h3>
+        <ul>
+                    <li><a href="keyboard_membrane.html">멤브레인</a></li>
+                    <li><a href="keyboard_mechanical.html">기계식</a></li>
+                    <li><a href="keyboard_capacitive.html">정전용량무접점</a></li>
+        </ul>
+    </div>
+</aside>
+</div>
+
+<footer id="main-footer">
+    <p>Copyright ⓒ 정창형. All rights reserved.</p>
+    <p id="clock"></p>
+</footer>
+</div>
+</body>
+</html>

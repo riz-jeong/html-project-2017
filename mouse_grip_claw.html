@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8>
+
+<title>키보드와 마우스</title>
+
+<style type="text/css">
+    *{ margin: 0; padding:0;
+        font-family:'맑은고딕','Malgun Gothic',Gothic, sans-serif; }
+    a{ color: black;text-decoration: none; }
+    li{ list-style: none; } 
+</style>
+
+<link type="text/css" rel="stylesheet" href="css.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('.outer-menu-item').hover(function ()
+            {
+                $(this).find('.inner-menu').show();
+            }, function () {
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+    window.onload = function(){
+        var clock = document.getElementById('clock');
+        
+        setInterval(function(){
+            var now = new Date();
+            clock.innerHTML = now.toString();
+        },1000);
+    };
+    </script>
+
+</head>
+
+<body>
+<div id="page-wrapper">
+    <header id ="main-header">
+        <hgroup>
+            <h1 class="master-title"><a href="INDEX.html">Keyboard & mouse</a></h1>
+            <h2 class="master-descriprion">키보드와 마우스</h2>
+        </hgroup>
+     </header>
+     <nav id="main-navigation">
+        <div class="pull-left">
+            <ul class="outer-menu">
+            <li class="outer-menu-item">
+                <span class="menu-title">키보드-방식</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_membrane.html"> 멤브레인</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical.html"> 기계식</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive.html"> 정전용량무접점</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">기계식키보드</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_linear.html">리니어</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_non-click.html">넌클릭</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_mechanical_click.html">클릭</a></li>
+                </ul>
+            </li>
+             <li class="outer-menu-item">
+                <span class="menu-title">정전용량무접점</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_topre.html">토프레</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_pfu.html">PFU</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="keyboard_capacitive_leopold.html">레오폴드</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">마우스 그립</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_palm.html">팜 그립</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_claw.html">클로 그립</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_grip_finger.html">핑거 그립</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">마우스 용어</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item">
+                    <a href="mouse_dpi.html">DPI</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_fps.html">FPS</a></li>
+
+                    <li class="inner-menu-item">
+                    <a href="mouse_pollingrate.html">폴링레이트</a></li>
+                </ul>
+            </li>
+        </div>
+    </nav>
+
+<div id="content">
+    <section id="main-section">
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">클로 그립</h1>
+            </div>
+            <hr>
+            <br>
+            <div class="article-body">
+                <img src="mouse_grip_claw\claw.jpg" width="690" />
+                <br/><br/>
+                <p>기본적으로 손가락 끝 부분이 마우스와 접촉하며, 손바닥과 마우스 끝 부분이 맞닿는 그립하는 방식이다. 크게 움직일 때는 팔을 이용하고 작게 움직일 때는 손가락과 손목을 이용하여 움직이는 그립 방법이다. 해당 그립은 저감도 유저 및 사용자에게 선호되는 그립으로 게임 내에서는 FPS게임 기준 저감도 스나이퍼 들이 많다.</p>
+            
+            <div style="cursor:pointer;" align="right" onclick="window.scrollTo(0,0);">TOP</div>
+            </div>            
+       </article>
+   </section>
+
+<aside id="main-aside">
+    <div class="aside-list">
+        <h3>키보드</h3>
+        <ul>
+                    <li><a href="keyboard_membrane.html">멤브레인</a></li>
+                    <li><a href="keyboard_mechanical.html">기계식</a></li>
+                    <li><a href="keyboard_capacitive.html">정전용량무접점</a></li>
+        </ul>
+    </div>
+</aside>
+</div>
+
+<footer id="main-footer">
+    <p>Copyright ⓒ 정창형. All rights reserved.</p>
+    <p id="clock"></p>
+</footer>
+</div>
+</body>
+</html>
